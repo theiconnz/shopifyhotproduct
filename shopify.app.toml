@@ -3,7 +3,7 @@
 client_id = "4e1f35d5183f64e7102425976eddfb31"
 name = "HotProducts"
 handle = "hotproducts"
-application_url = "https://shopify.flow200.com:3000"
+application_url = "https://shopify.flow200.com"
 embedded = true
 
 [build]
@@ -16,11 +16,11 @@ scopes = "write_products,read_products"
 
 [auth]
 redirect_urls = [
-  "https://shopify.flow200.com:3000/auth/callback",
-  "https://shopify.flow200.com:3000/auth/shopify/callback",
-  "https://shopify.flow200.com:3000/api/auth/callback"
+  "https://shopify.flow200.com/auth/callback",
+  "https://shopify.flow200.com/auth/shopify/callback",
+  "https://shopify.flow200.com/api/auth/callback"
 ]
-SHOPIFY_APP_URL="https://shopify.flow200.com:3000"
+SHOPIFY_APP_URL="https://shopify.flow200.com"
 [webhooks]
 api_version = "2024-07"
 
