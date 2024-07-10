@@ -1,11 +1,28 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+client_id = "4e1f35d5183f64e7102425976eddfb31"
+name = "HotProducts"
+handle = "hotproducts"
+application_url = "https://shopify.flow200.com/hotproducts"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "kota-life.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products,read_products"
+
+[auth]
+redirect_urls = [
+  "https://shopify.flow200.com/hotproducts/auth/callback",
+  "https://shopify.flow200.com/hotproducts/auth/shopify/callback",
+  "https://shopify.flow200.com/hotproducts/api/auth/callback"
+]
 
 [webhooks]
 api_version = "2024-07"
 
-  [[webhooks.subscriptions]]
-  topics = [ "app/uninstalled" ]
-  uri = "/webhooks"
-
+[pos]
+embedded = false
